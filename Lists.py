@@ -47,3 +47,39 @@ print('hard rock'.split())
 # Split the string by comma
 print('A,B,C,D'.split(','))
 
+# Copy and Clone List
+# Copy (copy by reference) the list A
+A = ["hard rock",10,1.2]
+B = A
+print('A: ', A)
+print('B: ', B)
+
+#Examine the copy by reference
+print('B[0]:', B[0])
+A[0] = "banana"
+print('B[0]', B[0])
+
+# Clone (clone by value) the list A
+B = A[:]
+print(B)
+
+# Now, change A, B will not change
+print('B[0]:', B[0])
+A[0] = "hard rock"
+print('B[0]:', B[0])
+
+# Quiz on list
+# Create a list a_list, with the following elements 1, hello, [1,2,3] and True
+a_list = [1,"hell0",[1,2,3],True]
+print(a_list)
+
+# Find the value stored at index 1 of a_list
+print(a_list[0])
+
+# Retrieve the elements stored at index 1, 2 and 3 of a_list
+print(a_list[1:4])
+
+# Concatenate the following lists A = [1, 'a'] and B = [2, 1, 'd']
+A = [1,'a']
+B = [2,1,'d']
+print(A+B)
