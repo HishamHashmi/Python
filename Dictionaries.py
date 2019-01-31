@@ -29,7 +29,7 @@ print(release_year_dict.keys())
 print(release_year_dict.values())
 
 # Append value with key into dictionary
-release_year_dict['Graduation']='2007'
+release_year_dict['Graduation'] ='2007'
 print(release_year_dict)
 
 # Delete entries by key
@@ -67,3 +67,4 @@ print(album_sales_dict.keys())
 
 # d) Find the names of the recording sales from the dictionary using the method values:
 print(album_sales_dict.values())
+
